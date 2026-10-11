@@ -1,0 +1,40 @@
+# 주 환경 — 실험 00~23 (07 제외) 전부 이 환경에서 돌렸다.
+#
+# Python 3.12.13
+# conda 환경 이름: admet
+# 아래 버전은 실제로 실험을 돌린 환경에서 확인해 고정한 값이다(추정 아님).
+#
+#   conda create -n admet python=3.12.13
+#   conda activate admet
+#   pip install -r requirements.txt
+#
+# ★torch 설치 — 실험을 돌린 것은 CUDA 빌드 2.6.0+cu124 다.
+#   아래 requirements 의 `torch==2.6.0` 만으로는 환경에 따라 원하는 빌드가 안 잡히므로,
+#   torch 는 index-url 을 지정해 먼저 설치한 뒤 나머지를 설치하는 편이 확실하다.
+#
+#     GPU (실제로 쓴 빌드):
+#       pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+#
+#     CPU (GPU 없는 환경):
+#       pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+#
+#   CPU 로도 전 단계가 동작한다. 다만 GNN 을 쓰는 16·17·18·19 는 매우 느리다
+#   (CUDA 기준 런타임이 16 은 약 33분, 17 은 약 2.7시간, 19 stage2 는 약 3.6시간이다 —
+#    각 results/*.json 의 runtime_s 참조).
+#
+# ★torch-geometric 2.8.0 은 torch-scatter / torch-sparse 를 요구하지 않는다.
+#   실제 환경에도 두 패키지는 설치돼 있지 않다.
+
+torch==2.6.0
+torch-geometric==2.8.0
+
+numpy==1.26.4
+scipy==1.17.1
+scikit-learn==1.9.0
+pandas==2.3.3
+xgboost==3.3.0
+matplotlib==3.11.0
+rdkit==2026.3.4
+
+# 데이터 획득 (src/00_load_data.py)
+PyTDC==1.0.0

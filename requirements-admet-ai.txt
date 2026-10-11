@@ -1,0 +1,16 @@
+# 07 단계 전용 환경 — src/07_gen_cyp.py 하나만 이 환경에서 돌린다.
+#
+# Python 3.11.15
+# conda 환경 이름: ADMET_AI
+#
+#   conda create -n ADMET_AI python=3.11.15
+#   conda activate ADMET_AI
+#   pip install -r requirements-admet-ai.txt
+#   conda run -n ADMET_AI python src/07_gen_cyp.py
+#
+# 이 단계는 각 약물 SMILES 에 ADMET-AI 를 돌려 CYP 8종을 예측하고
+# data/drug_cyp.csv 를 만든다. 주 환경(admet)과 torch 버전이 다르므로 분리했다.
+
+admet-ai==2.0.1
+chemprop==2.2.3
+torch==2.11.0
