@@ -1,0 +1,21 @@
+# 데이터는 이 저장소에 포함하지 않는다. src/00_load_data.py 가 TDC 에서 내려받는다.
+data/
+
+# 학습된 모델 가중치
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.h5
+*.ckpt
+
+# 파이썬
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# 환경
+.env
+.venv/
+venv/
