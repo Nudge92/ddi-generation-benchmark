@@ -23,6 +23,10 @@ DrugBank 약물-약물 상호작용 86종 분류. 데이터는 이 저장소에 
 
 ## 결과
 
+> `results/` 의 HTML 보고서 22개는 GitHub 저장소 화면에서는 렌더링되지 않는다.
+> GitHub Pages 주소로 열면 된다 —
+> `https://nudge92.github.io/ddi-generation-benchmark/results/<파일명>.html`
+
 ### 1. 다중분류 macro-F1 (86종 · 5시드 평균 ± 표준편차)
 
 | 모델 | warm | cold-start | **cold-cold** |
@@ -120,8 +124,10 @@ cold-cold 에서 macro-F1 1위는 DDIMDL 인데 accuracy 1위는 XGBoost 다.
 
 ### 6. 4세대가 무엇을 보고 있었나 — co-attention 해석
 
-[`results/20_ddi_coattention_interpret.html`](results/20_ddi_coattention_interpret.html)
-— SSI-DDI 의 co-attention 가중치를 원자 단위로 되돌려, **모델이 두 약물의 어느 원자에 주목해
+**[보고서 열어 보기](https://nudge92.github.io/ddi-generation-benchmark/results/20_ddi_coattention_interpret.html)**
+· 저장소 안의 파일: [`results/20_ddi_coattention_interpret.html`](results/20_ddi_coattention_interpret.html)
+
+SSI-DDI 의 co-attention 가중치를 원자 단위로 되돌려, **모델이 두 약물의 어느 원자에 주목해
 상호작용 유형을 골랐는지**를 분자 구조 위에 빨갛게 칠한 그림 12장이다.
 성능 수치가 아니라 판단 근거를 본 것이고, 위 결과 표에는 쓰이지 않는다.
 
