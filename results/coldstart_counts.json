@@ -1,0 +1,230 @@
+{
+ "config": {
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "drug_test_frac": 0.2,
+  "neg_ratio": 1.0,
+  "n_drugs": 1705,
+  "n_positive": 191392,
+  "n_warm_total": 382784
+ },
+ "per_seed": [
+  {
+   "seed": 0,
+   "n_train_drugs": 1364,
+   "n_test_drugs": 341,
+   "train(TT)": {
+    "pos": 118106,
+    "neg": 118106,
+    "total": 236212,
+    "neg_capped": false
+   },
+   "cold-start(TS)": {
+    "pos": 64532,
+    "neg": 64532,
+    "total": 129064,
+    "neg_capped": false
+   },
+   "cold-cold(SS)": {
+    "pos": 8754,
+    "neg": 8754,
+    "total": 17508,
+    "neg_capped": false
+   },
+   "verify": {
+    "cold-start": {
+     "regime": "cold-start",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 정확히 1개 미지",
+     "PASS": true
+    },
+    "cold-cold": {
+     "regime": "cold-cold",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 2개 다 미지",
+     "PASS": true
+    }
+   }
+  },
+  {
+   "seed": 1,
+   "n_train_drugs": 1364,
+   "n_test_drugs": 341,
+   "train(TT)": {
+    "pos": 127233,
+    "neg": 127233,
+    "total": 254466,
+    "neg_capped": false
+   },
+   "cold-start(TS)": {
+    "pos": 57654,
+    "neg": 57654,
+    "total": 115308,
+    "neg_capped": false
+   },
+   "cold-cold(SS)": {
+    "pos": 6505,
+    "neg": 6505,
+    "total": 13010,
+    "neg_capped": false
+   },
+   "verify": {
+    "cold-start": {
+     "regime": "cold-start",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 정확히 1개 미지",
+     "PASS": true
+    },
+    "cold-cold": {
+     "regime": "cold-cold",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 2개 다 미지",
+     "PASS": true
+    }
+   }
+  },
+  {
+   "seed": 2,
+   "n_train_drugs": 1364,
+   "n_test_drugs": 341,
+   "train(TT)": {
+    "pos": 125353,
+    "neg": 125353,
+    "total": 250706,
+    "neg_capped": false
+   },
+   "cold-start(TS)": {
+    "pos": 59018,
+    "neg": 59018,
+    "total": 118036,
+    "neg_capped": false
+   },
+   "cold-cold(SS)": {
+    "pos": 7021,
+    "neg": 7021,
+    "total": 14042,
+    "neg_capped": false
+   },
+   "verify": {
+    "cold-start": {
+     "regime": "cold-start",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 정확히 1개 미지",
+     "PASS": true
+    },
+    "cold-cold": {
+     "regime": "cold-cold",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 2개 다 미지",
+     "PASS": true
+    }
+   }
+  },
+  {
+   "seed": 3,
+   "n_train_drugs": 1364,
+   "n_test_drugs": 341,
+   "train(TT)": {
+    "pos": 125214,
+    "neg": 125214,
+    "total": 250428,
+    "neg_capped": false
+   },
+   "cold-start(TS)": {
+    "pos": 59280,
+    "neg": 59280,
+    "total": 118560,
+    "neg_capped": false
+   },
+   "cold-cold(SS)": {
+    "pos": 6898,
+    "neg": 6898,
+    "total": 13796,
+    "neg_capped": false
+   },
+   "verify": {
+    "cold-start": {
+     "regime": "cold-start",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 정확히 1개 미지",
+     "PASS": true
+    },
+    "cold-cold": {
+     "regime": "cold-cold",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 2개 다 미지",
+     "PASS": true
+    }
+   }
+  },
+  {
+   "seed": 4,
+   "n_train_drugs": 1364,
+   "n_test_drugs": 341,
+   "train(TT)": {
+    "pos": 126902,
+    "neg": 126902,
+    "total": 253804,
+    "neg_capped": false
+   },
+   "cold-start(TS)": {
+    "pos": 57942,
+    "neg": 57942,
+    "total": 115884,
+    "neg_capped": false
+   },
+   "cold-cold(SS)": {
+    "pos": 6548,
+    "neg": 6548,
+    "total": 13096,
+    "neg_capped": false
+   },
+   "verify": {
+    "cold-start": {
+     "regime": "cold-start",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 정확히 1개 미지",
+     "PASS": true
+    },
+    "cold-cold": {
+     "regime": "cold-cold",
+     "train_미지약물낀쌍": 0,
+     "test_조건위반": 0,
+     "train_test_쌍겹침": 0,
+     "조건": "test 쌍마다 2개 다 미지",
+     "PASS": true
+    }
+   }
+  }
+ ],
+ "summary": {
+  "all_verify_pass": true,
+  "train_mean": 249123.2,
+  "cold_start_mean": 119370.4,
+  "cold_cold_mean": 14290.4,
+  "cold_cold_min": 13010
+ }
+}
